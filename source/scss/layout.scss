@@ -1,0 +1,24 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '_config.scss' as *;
+
+// main Bootstrap Module
+@use 'config/_init-bootstrap.scss';
+
+@use './components/_header.scss' as *;
+@use './components/_footer.scss' as *;
+@use './components/_search-box.scss' as *;
+@use './components/ui/_input.scss' as *;
+
+
+// |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
+// | Timedoor New Standard                   | //
+// |_________________________________________| //
+
+.ratio-item {
+    @extend %ratioItem;
+}
+
+.container-fluid {
+    padding: 0px 58px;
+}

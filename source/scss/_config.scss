@@ -1,0 +1,14 @@
+// |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
+// | tmdrConfig v.1.0.1                      | //
+// | last update : 28 / 06 / 2023            | //
+// |                                         | //
+// | include :                               | //
+// | tmdrFunc v.1.1.1                        | //
+// | tmdrExtend v.1.0.1                      | //
+// | tmdrMIX v.1.2.1                         | //
+// |_________________________________________| //
+
+@forward 'config/_variable.scss';
+@forward 'config/_function.scss';
+@forward 'config/_mixin.scss';
+@forward 'config/_extend.scss';

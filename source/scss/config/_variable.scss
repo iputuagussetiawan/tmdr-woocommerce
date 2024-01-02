@@ -1,0 +1,66 @@
+@use 'sass:map';
+@use 'sass:math';
+
+$color: (
+    red: (
+        default: red,
+        100:#EB5757,
+    ),
+    green: (
+        default: green
+    ),
+    blue: (
+        default: #bde0f3,
+        100:#d6f0fd,
+        200:#bde0f3,
+        300:#a8ccdf,
+        400:#80a0b1,
+        500:#607D8B,
+        
+
+        
+    ),
+    black:(
+        100:#29292A,
+        200:#232526,
+        
+    ),
+    gray:(
+        25:#f7f8f9,
+        50:#ececec,
+        75:#E5E5E5,
+        100:#E0E0E0,
+        200:#DDDDDD,
+        250:#bdbdbd,
+        300:#bfc1c2,
+        400:#676A6C,
+    ),
+    white:(
+        default: #ffffff,
+        100:#F2F5F9,
+    )
+);
+
+$fontSizes: (
+    headline: (
+        xl : (
+            default: (
+                font-size: 80,
+                line-height: 2
+            ),
+            991: (
+                font-size: 56,
+                line-height: 1.3
+            ),
+            320: (
+                font-size: 36
+            )
+        ),
+        l: (
+            default: (
+                font-size: 48,
+                line-height: 60
+            )
+        )
+    )
+);
