@@ -181,6 +181,38 @@
   --bs-form-invalid-border-color: #ea868f;
 }
 
+.breadcrumb {
+  --bs-breadcrumb-padding-x: 0;
+  --bs-breadcrumb-padding-y: 0;
+  --bs-breadcrumb-margin-bottom: 1rem;
+  --bs-breadcrumb-bg: ;
+  --bs-breadcrumb-border-radius: ;
+  --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+  --bs-breadcrumb-item-padding-x: 0.5rem;
+  --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+  margin-bottom: var(--bs-breadcrumb-margin-bottom);
+  font-size: var(--bs-breadcrumb-font-size);
+  list-style: none;
+  background-color: var(--bs-breadcrumb-bg);
+  border-radius: var(--bs-breadcrumb-border-radius);
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: var(--bs-breadcrumb-item-padding-x);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: var(--bs-breadcrumb-divider-color);
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+.breadcrumb-item.active {
+  color: var(--bs-breadcrumb-item-active-color);
+}
+
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
@@ -11842,6 +11874,97 @@ a.remove:hover::before {
 
 .yith-wcwl-add-button .delete_item {
   color: transparent;
+}
+
+.breadcrumb {
+  margin-bottom: 0px;
+  align-items: center;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  position: relative;
+  top: 3px;
+}
+.breadcrumb .breadcrumb-item:first-child::before {
+  display: none;
+}
+.breadcrumb .breadcrumb-item::before {
+  content: url("https://api.iconify.design/tabler/chevron-right.svg?color=%2380a0b1");
+}
+.breadcrumb .breadcrumb-item a {
+  font-size: 16px;
+  line-height: 130%;
+  color: #29292A;
+  text-transform: uppercase;
+}
+.breadcrumb .breadcrumb-item a:hover {
+  color: #80a0b1;
+}
+.breadcrumb .breadcrumb-item.active {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #bfc1c2;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 767.98px) {
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    top: 1px;
+  }
+  .breadcrumb .breadcrumb-item a {
+    font-size: 14px;
+  }
+  .breadcrumb .breadcrumb-item.active {
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    top: 0px;
+  }
+  .breadcrumb .breadcrumb-item a {
+    font-size: 12px;
+  }
+  .breadcrumb .breadcrumb-item.active {
+    font-size: 12px;
+    top: 5px;
+  }
+}
+
+.breadcrumb-product .woocommerce-breadcrumb {
+  color: #bfc1c2;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.breadcrumb-product .woocommerce-breadcrumb .breadcrumb-separator {
+  padding: 0 20px;
+}
+.breadcrumb-product .woocommerce-breadcrumb .breadcrumb-separator::after {
+  content: "";
+  background-image: url("https://api.iconify.design/tabler/chevron-right.svg?color=%2380a0b1");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20px;
+  padding-left: 0;
+  padding-right: 20px;
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.breadcrumb-product .woocommerce-breadcrumb a {
+  color: #29292A;
+}
+.breadcrumb-product .woocommerce-breadcrumb a:hover {
+  color: #80a0b1;
+}
+.breadcrumb-product .woocommerce-breadcrumb a:before {
+  content: none !important;
 }
 
 @font-face {

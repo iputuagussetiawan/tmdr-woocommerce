@@ -1,0 +1,1 @@
+{"version":3,"file":"/assets/js/pages/myaccount.js","mappings":";;;;;AAAAA,KAAK,CAAC,iBAAiB,CAAC,C","sources":["webpack:///./source/js/pages/myaccount.js"],"sourcesContent":["alert('from my account')"],"names":["alert"],"sourceRoot":""}

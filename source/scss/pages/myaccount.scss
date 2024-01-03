@@ -1,0 +1,107 @@
+@use 'sass:math';
+@use '../_config.scss' as *;
+@use '../components/cards/_card-registerlogin.scss' as *;
+.my-account{
+    .woocommerce{
+        label{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 35px;
+        }
+        .my-account-title{
+            margin-bottom: 120px;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 6.4px;
+            text-transform: uppercase;
+            color: color(blue,500);
+            text-align: center;
+        }
+
+        .woocommerce-error{
+            color: red;
+        }
+
+        .woocommerce-Button{
+            margin-top: 40px;
+        }
+
+        .btn-reset-password{
+            margin-top: 10px;
+        }
+    }
+    .woocommerce-MyAccount-navigation{
+        ul{
+            padding: 10px;
+            list-style: none;
+            border: 1px solid color(gray,50);
+        }
+        li{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            border-bottom: 1px solid color(gray,50);
+            &:last-child{
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                border-bottom: none;
+            }
+            &.is-active a{
+                color: color(blue,500);
+            }
+        }
+
+        a{
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 36px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: color(gray,400);;
+            transition: 0.4s ease;
+
+            &::before{
+                transition: 0.4s ease;
+                display: none;
+            }
+
+            &:hover {
+                color: color(blue,500);
+            }
+            &:hover::before{
+                color: color(blue,500);
+                opacity: 1;
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-content{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .woocommerce-PaymentMethods{
+        list-style: none;
+        padding: 0px;
+    }
+
+    .password-change{
+        margin-top: 72px;
+    }
+
+    // .form-select {
+    //     background-image: url('https://api.iconify.design/carbon/chevron-down.svg') no-repeat center center / contain;
+    //     background-size: 16px 16px;
+    // }
+}
+
+.shop_table{
+    width: 100%;
+    .woocommerce-orders-table__cell{
+        padding: 16px 0px;
+    }
+}

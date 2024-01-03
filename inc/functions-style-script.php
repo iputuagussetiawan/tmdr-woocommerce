@@ -67,6 +67,14 @@ function tmdr_script_enqueue() {
         tmdr_print_css('loginCss', 'pages/login.css');
         tmdr_print_js('loginJs', 'pages/login.js');
     }
+    if (is_page_template('page-register.php')) {
+        tmdr_print_css('registerCss', 'pages/register.css');
+        tmdr_print_js('registerJs', 'pages/register.js');
+    }
+    if (is_page_template('page-myaccount.php')) {
+        tmdr_print_css('registerCss', 'pages/myaccount.css');
+        tmdr_print_js('registerJs', 'pages/myaccount.js');
+    }
     
     
     // example code to add CSS and JS to Singular Page

@@ -105,16 +105,16 @@
   }
 }
 
-.section-login {
+.section-register {
   padding: 160px 0px;
   background-color: #f7f8f9;
 }
-.section-login .woocommerce-error {
+.section-register .woocommerce-error {
   color: red;
   list-style: none;
   padding: 0px;
 }
-.section-login .woocommerce form.login {
+.section-register .woocommerce form.register {
   border: none;
   padding: 0px;
 }
@@ -129,4 +129,4 @@
   }
 }
 
-/*# sourceMappingURL=login.css.map*/
+/*# sourceMappingURL=register.css.map*/

@@ -22,16 +22,16 @@ $loginThumbnail=get_field('page_login_thumbnail' , $pageLoginID);
 if ($loginThumbnail) :
 	$urlLoginThumbnail = $loginThumbnail['url'];
 else :
-	$urlLoginThumbnail = get_stylesheet_directory_uri() . 'assets/images/blank-image.svg';
+	$urlLoginThumbnail = get_stylesheet_directory_uri() . '/assets/images/blank-image.svg';
 endif;
 
 
 $pageRegisterID = get_field('register_link', 'page_link')->ID;
-$registerThumbnail=get_field('page_thumbnail' , $pageRegisterID);
+$registerThumbnail=get_field('page_register_thumbnail' , $pageRegisterID);
 if ($registerThumbnail) :
 	$urlRegisterThumbnail = $registerThumbnail['url'];
 else :
-	$urlRegisterThumbnail = get_stylesheet_directory_uri() . 'assets/images/blank-image.svg';
+	$urlRegisterThumbnail = get_stylesheet_directory_uri() . '/assets/images/blank-image.svg';
 endif;
 
 if ( ! defined( 'ABSPATH' ) ) {

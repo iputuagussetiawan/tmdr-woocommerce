@@ -1,8 +1,8 @@
 <?php
-/*   Template Name: Page Login */
+/*   Template Name: Page Register */
 get_header();
 ?>
-<section class="section-login section-padding">
+<section class="section-register section-padding">
     <div class="container">
         <?php
             the_content()

@@ -105,28 +105,90 @@
   }
 }
 
-.section-login {
-  padding: 160px 0px;
-  background-color: #f7f8f9;
+.my-account .woocommerce label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
 }
-.section-login .woocommerce-error {
+.my-account .woocommerce .my-account-title {
+  margin-bottom: 120px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  color: #607D8B;
+  text-align: center;
+}
+.my-account .woocommerce .woocommerce-error {
   color: red;
+}
+.my-account .woocommerce .woocommerce-Button {
+  margin-top: 40px;
+}
+.my-account .woocommerce .btn-reset-password {
+  margin-top: 10px;
+}
+.my-account .woocommerce-MyAccount-navigation ul {
+  padding: 10px;
+  list-style: none;
+  border: 1px solid #ececec;
+}
+.my-account .woocommerce-MyAccount-navigation li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ececec;
+}
+.my-account .woocommerce-MyAccount-navigation li:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+.my-account .woocommerce-MyAccount-navigation li.is-active a {
+  color: #607D8B;
+}
+.my-account .woocommerce-MyAccount-navigation a {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #676A6C;
+  transition: 0.4s ease;
+}
+.my-account .woocommerce-MyAccount-navigation a::before {
+  transition: 0.4s ease;
+  display: none;
+}
+.my-account .woocommerce-MyAccount-navigation a:hover {
+  color: #607D8B;
+}
+.my-account .woocommerce-MyAccount-navigation a:hover::before {
+  color: #607D8B;
+  opacity: 1;
+}
+.my-account .woocommerce-MyAccount-content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+}
+.my-account .woocommerce-PaymentMethods {
   list-style: none;
   padding: 0px;
 }
-.section-login .woocommerce form.login {
-  border: none;
-  padding: 0px;
+.my-account .password-change {
+  margin-top: 72px;
 }
 
-.woocommerce-notices-wrapper {
-  max-width: 80%;
-  margin: 0px auto;
+.shop_table {
+  width: 100%;
 }
-@media only screen and (max-width: 1399.98px) {
-  .woocommerce-notices-wrapper .woocommerce-notices-wrapper {
-    max-width: 100%;
-  }
+.shop_table .woocommerce-orders-table__cell {
+  padding: 16px 0px;
 }
 
-/*# sourceMappingURL=login.css.map*/
+/*# sourceMappingURL=myaccount.css.map*/
