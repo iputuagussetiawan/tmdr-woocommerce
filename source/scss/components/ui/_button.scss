@@ -1,0 +1,166 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+
+.btn,
+.woocommerce-Button--alt,
+button[name="calc_shipping"]{
+    padding: 12px;
+    font-size:18px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase; 
+    border-radius: 0px;
+    font-weight: 400;
+    transition: 0.4s ease;
+
+    @media only screen and (max-width: 1919.98px) {
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+        font-size: 14px;
+    }
+}
+.btn-close{
+    outline: none;
+    box-shadow: none;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+.btn.btn-primary,
+.woocommerce-Button--alt,
+button[name="calc_shipping"]{
+    color: color(white);
+    background-color:color(blue,500);
+    border: 1px solid color(blue,500);
+    &:hover{
+        color: color(white);
+        background-color: color(blue,400);
+        border-color: color(blue,400);
+    }
+    &:focus,
+    &:active,
+    &:first-child:active{
+        color: color(white);
+        background-color:color(blue,500);
+        border-color: color(blue,500);
+    }
+    &.disabled {
+        color:  color(white);
+    }
+}
+.btn-secondary{
+    background-color: color(white);
+    border-color: color(white);
+    color: color(blue,400);
+    padding: 12px 40px;
+    
+    &:hover{
+        background-color: color(white,100);
+        border-color: color(white,100);
+        color: color(blue,400);
+    }
+    &:focus,
+    &:active,
+    &:first-child:active{
+        background-color: color(white);
+        border-color: color(white);
+        color: color(blue,400);
+    }
+}
+.btn-standard {
+    position: relative;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: color(black,100);
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: color(black,100);
+        transform-origin: bottom left;
+        transition: transform 0.25s ease-out;
+        transform: scaleX(1);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: color(black,100);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        transform: scaleX(0);
+        transition-delay: 250ms;
+    }
+    &:hover {
+        color: color(black,100);
+        &:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+            transition-delay: 250ms;
+        }
+        &:before {
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+    }
+
+    &--white{
+        @extend .btn-standard;
+        color: #ffffff;
+
+        &:before,
+        &::after {
+            background-color: #ffffff;
+        }
+
+        &:hover{
+            color: #ffffff;
+        }
+    }
+
+    @media only screen and (max-width: 1399.98px) {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    @media only screen and (max-width: 991.98px) {
+        font-size: 16px;
+        line-height: 13px;
+    }
+}
+
+.btn-login{
+    display: block;
+    width: 100%;
+}
+
+a.remove{
+    &::before {
+        content: url('https://api.iconify.design/ic/round-close.svg') !important;
+        transition: 0.4s ease;
+    }
+    &:hover::before{
+        content: url('https://api.iconify.design/ic/round-close.svg?color=%23f36969') !important;
+    }
+}
+
+.yith-wcwl-add-button{
+    .delete_item{
+        color: transparent;
+    }
+}

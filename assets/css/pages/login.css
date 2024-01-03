@@ -111,6 +111,10 @@
   list-style: none;
   padding: 0px;
 }
+.section-login .woocommerce form.login {
+  border: none;
+  padding: 0px;
+}
 
 .woocommerce-notices-wrapper {
   max-width: 80%;

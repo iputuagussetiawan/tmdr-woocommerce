@@ -4,16 +4,41 @@
 
 // main Bootstrap Module
 @use 'config/_init-bootstrap.scss';
-
+@use 'config/_reset.scss' as *;
 @use './components/_header.scss' as *;
 @use './components/_footer.scss' as *;
 @use './components/_search-box.scss' as *;
 @use './components/ui/_input.scss' as *;
+@use './components/ui/_button.scss' as *;
 
 
 // |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
 // | Timedoor New Standard                   | //
 // |_________________________________________| //
+
+@font-face {
+    font-family: 'Kozuka Gothic Pro';
+    src: url('../../assets/fonts/TT0855M_regular.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kozuka Gothic Pro';
+    src: url('../../assets/fonts/TT1159M_medium.TTF') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kozuka Gothic Pro';
+    src: url('../../assets/fonts/TT1160M_bolf.TTF') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
 .ratio-item {
     @extend %ratioItem;

@@ -31,7 +31,7 @@ $registerThumbnail=get_field('page_thumbnail' , $pageRegisterID);
 if ($registerThumbnail) :
 	$urlRegisterThumbnail = $registerThumbnail['url'];
 else :
-	$urlRegisterThumbnail = get_stylesheet_directory_uri() . '/images/blank-image.svg';
+	$urlRegisterThumbnail = get_stylesheet_directory_uri() . 'assets/images/blank-image.svg';
 endif;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -74,7 +74,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
 					</label>
 					<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-					<button type="submit" class="btn btn-primary card-registerlogin__btn woocommerce-button button woocommerce-form-login__submit<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
+					<button type="submit" class="btn btn-primary card-registerlogin__btn woocommerce-button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
 				</p>
 				<?php do_action( 'woocommerce_login_form_end' ); ?>
 				<p class="register-link text-center"><span><?php echo pll__('Dont Have an Account?')?></span> 
@@ -129,7 +129,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 				<p class="woocommerce-form-row form-row">
 					<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
-					<button type="submit" class="btn btn-primary card-registerlogin__btn woocommerce-Button woocommerce-button button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?> woocommerce-form-register__submit" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
+					<button type="submit" class="btn btn-primary card-registerlogin__btn woocommerce-Button woocommerce-button <?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?> woocommerce-form-register__submit" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
 				</p>
 
 				<?php do_action( 'woocommerce_register_form_end' ); ?>

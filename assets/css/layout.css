@@ -10899,6 +10899,45 @@ progress {
     display: none !important;
   }
 }
+body {
+  position: relative;
+  font-family: "Kozuka Gothic Pro";
+  color: #29292A;
+  transition: 0.4s ease;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+a {
+  transition: 0.4s ease;
+  text-decoration: none;
+  color: #80a0b1;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .top-nav {
   position: fixed;
   top: 0px;
@@ -11633,6 +11672,199 @@ input[type=checkbox]:checked:after {
   border-radius: 50%;
 }
 
+.btn,
+.woocommerce-Button--alt,
+button[name=calc_shipping] {
+  padding: 12px;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-weight: 400;
+  transition: 0.4s ease;
+}
+@media only screen and (max-width: 1919.98px) {
+  .btn,
+  .woocommerce-Button--alt,
+  button[name=calc_shipping] {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .btn,
+  .woocommerce-Button--alt,
+  button[name=calc_shipping] {
+    font-size: 14px;
+  }
+}
+
+.btn-close {
+  outline: none;
+  box-shadow: none;
+}
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn.btn-primary,
+.woocommerce-Button--alt,
+button[name=calc_shipping] {
+  color: #ffffff;
+  background-color: #607D8B;
+  border: 1px solid #607D8B;
+}
+.btn.btn-primary:hover,
+.woocommerce-Button--alt:hover,
+button[name=calc_shipping]:hover {
+  color: #ffffff;
+  background-color: #80a0b1;
+  border-color: #80a0b1;
+}
+.btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:first-child:active,
+.woocommerce-Button--alt:focus,
+.woocommerce-Button--alt:active,
+.woocommerce-Button--alt:first-child:active,
+button[name=calc_shipping]:focus,
+button[name=calc_shipping]:active,
+button[name=calc_shipping]:first-child:active {
+  color: #ffffff;
+  background-color: #607D8B;
+  border-color: #607D8B;
+}
+.btn.btn-primary.disabled,
+.woocommerce-Button--alt.disabled,
+button[name=calc_shipping].disabled {
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #80a0b1;
+  padding: 12px 40px;
+}
+.btn-secondary:hover {
+  background-color: #F2F5F9;
+  border-color: #F2F5F9;
+  color: #80a0b1;
+}
+.btn-secondary:focus, .btn-secondary:active, .btn-secondary:first-child:active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #80a0b1;
+}
+
+.btn-standard, .btn-standard--white {
+  position: relative;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #29292A;
+}
+.btn-standard:before, .btn-standard--white:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #29292A;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+}
+.btn-standard:after, .btn-standard--white:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #29292A;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+  transition-delay: 250ms;
+}
+.btn-standard:hover, .btn-standard--white:hover {
+  color: #29292A;
+}
+.btn-standard:hover:after, .btn-standard--white:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition-delay: 250ms;
+}
+.btn-standard:hover:before, .btn-standard--white:hover:before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.btn-standard--white {
+  color: #ffffff;
+}
+.btn-standard--white:before, .btn-standard--white::after {
+  background-color: #ffffff;
+}
+.btn-standard--white:hover {
+  color: #ffffff;
+}
+@media only screen and (max-width: 1399.98px) {
+  .btn-standard, .btn-standard--white {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .btn-standard, .btn-standard--white {
+    font-size: 16px;
+    line-height: 13px;
+  }
+}
+
+.btn-login {
+  display: block;
+  width: 100%;
+}
+
+a.remove::before {
+  content: url("https://api.iconify.design/ic/round-close.svg") !important;
+  transition: 0.4s ease;
+}
+a.remove:hover::before {
+  content: url("https://api.iconify.design/ic/round-close.svg?color=%23f36969") !important;
+}
+
+.yith-wcwl-add-button .delete_item {
+  color: transparent;
+}
+
+@font-face {
+  font-family: "Kozuka Gothic Pro";
+  src: url("../../assets/fonts/TT0855M_regular.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kozuka Gothic Pro";
+  src: url("../../assets/fonts/TT1159M_medium.TTF") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kozuka Gothic Pro";
+  src: url("../../assets/fonts/TT1160M_bolf.TTF") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 .container-fluid {
   padding: 0px 58px;
 }
