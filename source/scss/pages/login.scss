@@ -1,0 +1,24 @@
+@use 'sass:math';
+@use '../_config.scss' as *;
+@use '../components/cards/_card-registerlogin.scss' as *;
+
+.section-login{
+    padding: 160px 0px;
+    background-color: color(gray,25);
+    .woocommerce-error{
+        color: red;
+        list-style: none;
+        padding: 0px;
+    }
+}
+
+.woocommerce-notices-wrapper{
+    max-width: 80%;
+    margin: 0px auto;
+    @media only screen and (max-width: 1399.98px) {
+        .woocommerce-notices-wrapper{
+            max-width: 100%;
+        }
+    }
+}
+

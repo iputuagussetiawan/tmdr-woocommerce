@@ -1,5 +1,7 @@
 {
     "/assets/js/layout.js": "/assets/js/layout.js",
+    "/assets/js/pages/login.js": "/assets/js/pages/login.js",
     "/assets/css/tmdr-admin.css": "/assets/css/tmdr-admin.css",
+    "/assets/css/pages/login.css": "/assets/css/pages/login.css",
     "/assets/css/layout.css": "/assets/css/layout.css"
 }
