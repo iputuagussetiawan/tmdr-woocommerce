@@ -1,0 +1,106 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+
+.card-product{
+    @include imageRatio(330,350);
+    padding: 0px 0px 24px 0px;
+    position: relative;
+    transition: 0.4s ease;
+    border: 1px solid transparent;
+    height: 100%;
+    &:hover{
+        border: 1px solid color(gray,50);
+    }
+    .yith-wcwl-add-button{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        z-index: 2;
+    }
+    .yith-wcwl-add-to-wishlist {
+        margin-top: 0px;
+    }
+    .product_type_simple,
+    .added_to_cart.wc-forward,
+    .product_type_variable {
+        font-size: 18px;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+    }
+    .star-rating{
+        margin: 0 auto;
+    }
+    .delete_item{
+        color: transparent !important;
+    }
+    &__image-container{
+        margin-bottom: 30px;
+        overflow: hidden;
+        img{
+            transition:1s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title{
+        color: color(black,200);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 175%
+    }
+    &__price{
+        color: color(blue,500);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+        del{
+            padding-right: 10px;
+            color: rgba(96, 125, 139, 0.50);
+            font-size: 20px;
+        }
+    }
+    &__on-sale{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 175%;
+        background: color(blue,500);
+        color: #ffffff;
+        z-index: 1;
+    }
+    &:hover &__image-container img{
+        transform: scale(1.1);
+    }
+    @media only screen and (max-width: 1399.98px) {
+        &__title{
+            font-size: 18px;
+        }
+        &__price{
+            color: color(blue,500);
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 200%;
+    
+            del{
+                padding-right: 10px;
+                color: rgba(96, 125, 139, 0.50);
+                font-size: 20px;
+            }
+        }
+        &__on-sale{
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+}

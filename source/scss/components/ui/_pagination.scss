@@ -1,0 +1,32 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+.woocommerce-pagination{
+    order: 1;
+    grid-column: span 2;
+    ul{
+        padding: 0px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    li{
+        span,a{
+            padding: 10px 16px;
+            text-decoration: none;
+            border: 1px solid color(gray,50);
+            font-size: 12px;
+        }
+
+        span.current{
+            background-color: color(blue,500);
+            border-color:color(blue,500);
+            color: #ffffff;
+        }
+
+        .next::after,
+        .prev::after{
+            display: none;
+        } 
+    }
+}

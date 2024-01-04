@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="<?php echo getCurrentLang(); ?>">
 <head>
-    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name=”format-detection” content=”telephone=no”>
     <meta name="theme-color" content="#10AF13">
-    
     <?php wp_head(); ?>
 </head>
-
 <body>
-    
     <?php wp_body_open(); ?>
-    
     <header>
         <div class="top-nav">
             <div class="container-fluid">
@@ -60,7 +55,6 @@
                                 'walker' => new bootstrap_5_wp_nav_menu_walker()
                             ));
 						?>
-
                         <div class="cart-wishlist-holder">
                             <?php 
                                 wp_nav_menu(array(

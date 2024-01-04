@@ -145,3 +145,14 @@ function add_membership_in_menu($items, $args){
 }
 add_filter('wp_nav_menu_items', 'add_membership_in_menu', 10, 2);
 
+function redirect_after_login() {
+    return home_url('/my-account'); // Change '/my-account' to the desired URL
+}
+add_filter('woocommerce_login_redirect', 'redirect_after_login');
+
+// Redirect users to the home page after logout
+function redirect_after_logout() {
+    wp_redirect(home_url()); // Redirect to the home page
+    exit();
+}
+add_action('wp_logout', 'redirect_after_logout');

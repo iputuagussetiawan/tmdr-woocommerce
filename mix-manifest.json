@@ -3,9 +3,11 @@
     "/assets/js/pages/login.js": "/assets/js/pages/login.js",
     "/assets/js/pages/register.js": "/assets/js/pages/register.js",
     "/assets/js/pages/myaccount.js": "/assets/js/pages/myaccount.js",
-    "/assets/css/tmdr-admin.css": "/assets/css/tmdr-admin.css",
+    "/assets/js/pages/shop.js": "/assets/js/pages/shop.js",
+    "/assets/css/pages/shop.css": "/assets/css/pages/shop.css",
     "/assets/css/pages/myaccount.css": "/assets/css/pages/myaccount.css",
     "/assets/css/pages/register.css": "/assets/css/pages/register.css",
     "/assets/css/pages/login.css": "/assets/css/pages/login.css",
-    "/assets/css/layout.css": "/assets/css/layout.css"
+    "/assets/css/layout.css": "/assets/css/layout.css",
+    "/assets/css/tmdr-admin.css": "/assets/css/tmdr-admin.css"
 }
